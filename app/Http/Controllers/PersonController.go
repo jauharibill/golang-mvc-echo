@@ -66,7 +66,7 @@ func Delete(c echo.Context) error {
 
 	person_id := c.Param("id")
 
-	person := DB.Init().Delete(Models.PersonModel{}, person_id)
+	person := DB.Init().Delete(&Models.PersonModel{}, person_id)
 
-	return c.JSON(http.StatusOK, person.Unscoped())
+	return c.JSON(http.StatusOK, person)
 }
