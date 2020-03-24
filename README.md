@@ -12,6 +12,6 @@ $ go run Person
 
 Feel free to contribute, make new branch and pull request
 
-## Lisence
+## Licence
  
  MIT
